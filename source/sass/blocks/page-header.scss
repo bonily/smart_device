@@ -1,0 +1,58 @@
+.page-header__wpapper {
+  max-width: 1920px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.page-header__topline {
+  display: flex;
+  justify-content: end;
+
+  max-width: 1420px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 33px;
+  padding-left: 3px;
+  padding-right: 6px;
+}
+
+.page-header__logo {
+  margin-right: auto;
+}
+
+.page-header__contacts {
+  display: flex;
+
+  margin: 0;
+}
+
+.page-header__button {
+  margin-top: 3px;
+  margin-left: 49px;
+}
+
+@media (max-width: $tablet-width) {
+
+  .page-header__topline {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 23px;
+  }
+
+
+  .page-header__button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .page-header__topline {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 15px;
+  }
+}

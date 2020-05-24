@@ -1,12 +1,12 @@
 @import "fonts-style.scss", "mixin.scss", "variables.scss", "normalize.scss", "global.scss";
 @import "blocks/call-button.scss";
 @import "blocks/header-contacts.scss";
-// @import "blocks/aditional.scss";
+@import "blocks/consultation__button.scss";
 @import "blocks/main-page.scss";
-// @import "blocks/specification.scss";
+@import "blocks/advantages.scss";
 @import "blocks/page-header.scss";
 @import "blocks/goods.scss";
-// @import "blocks/program.scss";
+@import "blocks/advantage-block.scss";
 // @import "blocks/example.scss";
 // @import "blocks/contact.scss";
 // @import "blocks/page-footer.scss";
@@ -15,7 +15,7 @@
 // @import "blocks/catalog-goods.scss";
 // @import "blocks/product.scss";
 // @import "blocks/all-goods.scss";
-// @import "blocks/visually-hidden.scss";
+@import "blocks/visually-hidden.scss";
 // @import "blocks/footer-logo.scss";
 // @import "blocks/nav-toggle.scss";
 // @import "blocks/slider.scss";

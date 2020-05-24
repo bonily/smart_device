@@ -1,0 +1,37 @@
+.consultation__button {
+  display: block;
+
+  width: 407px;
+  height: 55px;
+
+  padding-top: 17px;
+
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $color-title;
+
+  background: $pick-out-color;
+  border-radius: 5px;
+
+}
+
+
+@media (max-width: $tablet-width) {
+
+  .consultation__button {
+    width: 379px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .consultation__button {
+    width: 287px;
+  }
+}

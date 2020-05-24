@@ -1,0 +1,151 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 1200px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  list-style: none;
+
+}
+
+
+.advantages__item {
+
+  min-height: 299px;
+  width: 50%;
+
+  margin-bottom: 30px;
+
+  
+  background-color: #ffffff;
+
+  }
+
+.advantages__item-wrapper {
+  max-width: 570px;
+  height: 100%;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 42px;
+  padding-top: 39px;
+  padding-right: 41px;
+
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid $pick-out-color;
+
+  &--secret {
+    padding-top: 43px;
+  }
+
+  &:hover {
+    color: $color-title;
+    
+    background-color: $pick-out-color;
+
+    .advantages__item-title {
+      color: $color-title;
+    }
+
+    .advantages__image {
+      fill: $color-title;
+    }
+  }
+}
+
+.advantages__item-title {
+  display: block;
+
+  margin-top: 14px;
+  margin-bottom: 15px;
+
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 34px;
+
+  color: $pick-out-color;
+}
+
+@media (max-width: $tablet-width) {
+
+  .advantages__item {
+    min-height: 232px;
+
+    &:nth-child(even) {
+      padding-left: 15px;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 15px;
+    }
+
+  }
+
+  .advantages__item-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 24px 19px 20px 24px;
+
+    &--secret {
+      padding-top: 24px;
+    }
+
+    &--secret span {
+      margin-top: 2px;
+      margin-bottom: 14px;
+    }
+
+    &--price span {
+      margin-bottom: 8px;
+    }
+  }
+
+  .advantages__item-title {
+    margin-top: 1px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .advantages__item {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    &:nth-child(even) {
+      padding-left: 0;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 0;
+    }
+  }
+
+  
+  .advantages__item-wrapper {
+    max-width: 100%;
+
+    padding-right: 10px;
+    padding-bottom: 24px;
+  }
+
+  .advantages__item-title {
+    margin-top: 6px;
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

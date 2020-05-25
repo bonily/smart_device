@@ -95,7 +95,7 @@
     margin-left: 0;
     margin-right: 0;
 
-    padding: 24px 19px 20px 24px;
+    padding: 24px 20px 20px 24px;
 
     &--secret {
       padding-top: 24px;
@@ -139,6 +139,10 @@
 
     padding-right: 10px;
     padding-bottom: 24px;
+
+    &--time {
+      padding-right: 20px;
+    }
   }
 
   .advantages__item-title {

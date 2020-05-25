@@ -1,6 +1,6 @@
 .main-block {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 
   min-height: 878px;
   
@@ -12,6 +12,8 @@
   &::before {
     content: '';
     position: absolute;
+    z-index: 0;
+
     left: 0;
     top: 0;
 
@@ -24,6 +26,8 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 0;
+
     left: 0;
     top: 0;
 
@@ -36,6 +40,8 @@
 }
 
 .main-block__container {
+  position: relative;
+  z-index: 5;
   max-width: 1597px;
 
   margin-left: auto;
@@ -81,6 +87,7 @@
     left: 0;
     top: 0;
     position: absolute;
+    z-index: 0;
     
     width: 66px;
     height: 2px;
@@ -94,11 +101,17 @@
 }
 
 .main-block__button {
+  position: relative;
+  z-index: 5;
+
   margin-top: 44px;
   margin-left: 97px;
 }
 
 .main-block__scroll {
+  position: relative;
+  z-index: 5;
+
   display: block;
   position: absolute;
   left: 214px;

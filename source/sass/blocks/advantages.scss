@@ -1,7 +1,9 @@
 .advantages {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 5;
 
   max-width: 1200px;
 

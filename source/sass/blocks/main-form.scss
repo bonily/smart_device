@@ -1,0 +1,32 @@
+.main-form {
+  position: relative;
+
+  background: url("../img/bg-form.png") no-repeat $pick-out-color;
+  background-position: calc(70% - 689px) -60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: url("../img/form-polygon.svg") no-repeat right 36px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+
+  .main-form {
+    background: $pick-out-color;
+
+    &::before {
+      background: transparent;
+    }
+  }
+}
+
+
+

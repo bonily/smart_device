@@ -113,7 +113,7 @@ li.company-goods__item + li {
 
 
   li.company-goods__item + li {
-    margin-left: 25px;
+    margin-left: 26px;
     margin-top: 46px;
   }
 
@@ -121,8 +121,8 @@ li.company-goods__item + li {
     max-width: 100%;
     min-height: 256px;
 
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 26px;
+    margin-right: 24px;
 
     font-size: 20px;
     line-height: 30px;
@@ -133,6 +133,7 @@ li.company-goods__item + li {
     &--make {
       background: url("../img/bg-make-tablet.jpg")
     }
+
   }
 
   .company-goods__title {
@@ -147,6 +148,10 @@ li.company-goods__item + li {
   .company-goods__item a {
     padding-top: 42px;
     padding-right: 510px;
+  }
+
+  .company-goods__item--details a {
+    padding-top: 52px;
   }
 }
 
@@ -176,5 +181,7 @@ li.company-goods__item + li {
     padding-right: 82px;
   }
 
-  
+  .company-goods__item--details a {
+    padding-top: 30px;
+  }
 }

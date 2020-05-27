@@ -21,12 +21,11 @@
   padding-top: 4px;
 }
 
-.header-contacts__email img{
+.header-contacts__email img {
   margin-right: 20px;
 }
 
 @media (max-width: $tablet-width) {
-
   .header-contacts {
     padding-top: 11px;
   }
@@ -41,7 +40,7 @@
 
     margin-right: 0;
   }
-  
+
   .header-contacts__phone img {
     width: 24px;
     height: 24px;
@@ -57,7 +56,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .header-contacts {
     padding-top: 4px;
   }

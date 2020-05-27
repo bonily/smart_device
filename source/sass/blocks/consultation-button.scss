@@ -1,4 +1,4 @@
-.consultation__button {
+.consultation-button {
   display: block;
 
   width: 407px;
@@ -19,19 +19,19 @@
   background: $pick-out-color;
   border-radius: 5px;
 
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
-
 @media (max-width: $tablet-width) {
-
-  .consultation__button {
+  .consultation-button {
     width: 379px;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-  .consultation__button {
+  .consultation-button {
     width: 287px;
   }
 }

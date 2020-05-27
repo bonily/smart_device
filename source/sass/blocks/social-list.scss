@@ -1,0 +1,26 @@
+.social-list {
+  display: flex;
+  max-height: 30px;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-list li {
+  margin-right: 16px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social-list {
+    justify-content: space-between;
+
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+

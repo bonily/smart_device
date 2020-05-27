@@ -5,7 +5,7 @@
   padding-bottom: 100px;
 
   background: url("../img/advantages-poligon.svg") no-repeat calc(50% + 35px) 147px;
-  
+
   &::before {
     content: "";
 
@@ -38,7 +38,6 @@
 
 
 @media (max-width: $tablet-width) {
-  
   .advantage-block {
     padding-top: 55px;
     padding-bottom: 230px;
@@ -57,9 +56,7 @@
   }
 }
 
-
 @media (max-width: $mobile-width) {
-
   .advantage-block {
     padding-top: 37px;
     padding-left: 14px;
@@ -67,5 +64,4 @@
 
     background-position: calc(50% + 155px) 653px;
   }
-  
 }

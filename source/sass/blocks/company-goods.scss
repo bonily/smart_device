@@ -1,16 +1,15 @@
 .company-goods {
-  background-color: #1B2D37;
+  background-color: #1b2d37;
 
   width: 100%;
   min-height: 500px;
-
 }
 
 .company-goods__wrapper {
   max-width: 1170px;
 }
 
-.company-goods__title {
+.company-goods h2 {
   display: block;
 
   margin: 0;
@@ -72,7 +71,6 @@
     height: 63px;
 
     background: url("../img/pointer.svg") no-repeat center $pick-out-color;
-
   }
 
   &--make {
@@ -85,6 +83,10 @@
 
   &--details {
     background: url("../img/bg-details.jpg") no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 
@@ -106,13 +108,11 @@ li.company-goods__item + li {
 }
 
 @media (max-width: $tablet-width) {
-
   .company-goods__list {
     flex-direction: column;
 
     padding-bottom: 81px;
   }
-
 
   li.company-goods__item + li {
     margin-left: 26px;
@@ -136,16 +136,17 @@ li.company-goods__item + li {
       background: url("../img/bg-make-tablet.jpg") no-repeat;
       background-size: cover;
     }
-
   }
 
-  .company-goods__title {
+  .company-goods h2 {
     font-size: 32px;
     line-height: 45px;
 
     padding-left: 26px;
     padding-top: 50px;
     padding-right: 120px;
+
+    margin-bottom: 49px;
   }
 
   .company-goods__item a {
@@ -159,17 +160,16 @@ li.company-goods__item + li {
 }
 
 @media (max-width: $mobile-width) {
-
   .company-goods__list {
     padding-bottom: 65px;
   }
-  
-  .company-goods__title {
+
+  .company-goods h2 {
     font-size: 28px;
     line-height: 39px;
 
     margin-bottom: 42px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .company-goods__item {

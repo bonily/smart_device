@@ -17,4 +17,9 @@
 
   border: 1px solid $color-border;
   border-radius: 5px;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }

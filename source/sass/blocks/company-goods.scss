@@ -119,7 +119,7 @@ li.company-goods__item + li {
   .company-goods__list {
     flex-direction: column;
 
-    padding-bottom: 81px;
+    padding-bottom: 79px;
   }
 
   li.company-goods__item + li {
@@ -183,6 +183,10 @@ li.company-goods__item + li {
   .company-goods__item {
     margin-left: 15px;
     margin-right: 15px;
+
+    &::after {
+      bottom: -1px;
+    }
   }
 
   li.company-goods__item + li {

@@ -6,11 +6,10 @@
   <title>SMART DEVICE.Умные технологии</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Сайт компании Smart-device"> 
-  <link rel="preload" href="fonts/ptmonoregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensedregular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptmonoregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensedregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensedbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link href="css/style.mine.css" rel="stylesheet">
-<!--[if IE]><script type="text/javascript" src="js/picturefill.min.js"></script><![endif]-->
 </head>
 
 <body>
@@ -215,7 +214,23 @@
       <button class="popap__close-button" type="button" aria-label="Закрыть попап"></button>
     </form>
   </div>
-  <script src="js/vendor.js" loading="lazy"></script>
-  <script src="js/main.js"></script>
+  <script>
+        var ua = navigator.userAgent;
+    if (ua.search(/Trident/) > 0) {
+      var vendorScript = document.createElement('script');
+      vendorScript.src = "js/vendor.js";
+      document.body.appendChild(vendorScript);
+
+      var mainScript = document.createElement('script');
+        mainScript.src = "js/main.js";
+      document.body.appendChild(mainScript);
+    }
+  </script>
+  <link rel="preload" as="script" href="js/vendor.js" onload="var script = document.createElement('script');
+        script.src = this.href;
+        document.body.append(script);">
+  <link rel="preload" as="script" href="js/main.js" onload="var script = document.createElement('script');
+        script.src = this.href;
+        document.body.append(script);">
 </body>
 </html>

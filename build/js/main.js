@@ -1,5 +1,3 @@
-'use strict';
-
 (function () {
 
   const popapPlace = document.querySelector('main');
@@ -32,7 +30,7 @@
     }
   }
 
-  window.addEventListener(`resize`, function () {
+  window.addEventListener('resize', function () {
     consultationButton.textContent = 'получить бесплатную консультацию';
     if (window.matchMedia(mobileWidth).matches) {
       consultationButton.textContent = 'бесплатная консультация';
@@ -67,7 +65,7 @@
 
     button.addEventListener('click', function () {
       if (activeSmartBlock) {
-        activeSmartBlock.classList.add('page-footer__smart-block--hidden')
+        activeSmartBlock.classList.add('page-footer__smart-block--hidden');
       }
 
       if (block.classList.contains('page-footer__smart-block--hidden')) {

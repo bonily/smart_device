@@ -1,0 +1,126 @@
+.popap {
+  position: absolute;
+  z-index: 5;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popap__template {
+  display: none;
+}
+
+.popap__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 136px;
+  margin-left: 715px;
+
+  width: 490px;
+  height: 605px;
+
+  background-color: $pick-out-color;
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 13px;
+
+    font-family: $title-font;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 39px;
+
+    color: $color-title;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $color-title;
+
+    margin-bottom: 32px;
+  }
+
+  button {
+    width: 411.44px;
+    height: 46.65px;
+
+    margin-left: -2px;
+    margin-bottom: 25px;
+  }
+}
+
+.popap__form input,
+.popap__form textarea {
+  padding-left: 22px;
+  margin-bottom: 30px;
+
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-title;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+
+  &::placeholder {
+    color: $color-title;
+  }
+}
+
+.popap__form input {
+  height: 51.83px;
+}
+
+.popap__form textarea {
+  height: 104px;
+
+  padding-top: 13px;
+}
+
+.popap__agree-block {
+  max-width: 100%;
+
+  padding-left: 49px;
+
+  input[type="checkbox"] + label {
+    &::before {
+      top: 11px;
+      left: -1px;
+    }
+  }
+}
+
+button.popap__close-button {
+  position: absolute;
+
+  right: 22px;
+  top: 17px;
+
+  width: 16px;
+  height: 16px;
+
+  background: url("../img/close.svg") no-repeat;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.5;
+  }
+}

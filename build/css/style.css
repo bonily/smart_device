@@ -355,12 +355,12 @@ body {
 
 a {
   cursor: pointer;
-  text-decoration: none;
-  color: #ffffff; }
+  text-decoration: none; }
 
 .call-button {
   width: 180px;
   height: 45px;
+  padding-top: 13px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -369,7 +369,6 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 0;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px; }
@@ -550,8 +549,10 @@ a {
 .page-header {
   position: relative;
   z-index: 5; }
-  .page-header a:hover {
-    opacity: 0.5; }
+  .page-header a {
+    color: #ffffff; }
+    .page-header a:hover {
+      opacity: 0.5; }
 
 .page-header__wpapper {
   max-width: 1920px;
@@ -685,6 +686,8 @@ a {
   opacity: 0.5;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg); }
+  .main-block__scroll:hover {
+    opacity: 1; }
 
 @media (max-width: 1023px) {
   .main-block {
@@ -854,7 +857,8 @@ a {
           box-sizing: border-box;
   border-radius: 5px; }
   .about-company__button:hover {
-    border-color: red; }
+    color: #ffffff;
+    background-color: #00b2ff; }
 
 @media (max-width: 1023px) {
   .about-company {
@@ -1589,3 +1593,106 @@ li.company-goods__item + li {
   border: 0;
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%); }
+
+.popap {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.popap__template {
+  display: none; }
+
+.popap__form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 136px;
+  margin-left: 715px;
+  width: 490px;
+  height: 605px;
+  background-color: #00b2ff; }
+  .popap__form h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 13px;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 39px;
+    color: #ffffff; }
+  .popap__form p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 32px; }
+  .popap__form button {
+    width: 411.44px;
+    height: 46.65px;
+    margin-left: -2px;
+    margin-bottom: 25px; }
+
+.popap__form input,
+.popap__form textarea {
+  padding-left: 22px;
+  margin-bottom: 30px;
+  font-family: "PTMono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none; }
+  .popap__form input::-webkit-input-placeholder,
+  .popap__form textarea::-webkit-input-placeholder {
+    color: #ffffff; }
+  .popap__form input::-moz-placeholder,
+  .popap__form textarea::-moz-placeholder {
+    color: #ffffff; }
+  .popap__form input:-ms-input-placeholder,
+  .popap__form textarea:-ms-input-placeholder {
+    color: #ffffff; }
+  .popap__form input::-ms-input-placeholder,
+  .popap__form textarea::-ms-input-placeholder {
+    color: #ffffff; }
+  .popap__form input::placeholder,
+  .popap__form textarea::placeholder {
+    color: #ffffff; }
+
+.popap__form input {
+  height: 51.83px; }
+
+.popap__form textarea {
+  height: 104px;
+  padding-top: 13px; }
+
+.popap__agree-block {
+  max-width: 100%;
+  padding-left: 49px; }
+  .popap__agree-block input[type="checkbox"] + label::before {
+    top: 11px;
+    left: -1px; }
+
+button.popap__close-button {
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/close.svg") no-repeat;
+  border: none; }
+  button.popap__close-button:hover {
+    cursor: pointer;
+    opacity: 0.5; }

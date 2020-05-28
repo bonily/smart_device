@@ -15,10 +15,6 @@
   const allTextContents = [];
   const lazyImages = document.querySelectorAll('.lazy-bg');
 
-  // window.addEventListener('scroll', function () {
-
-  // });
-
   window.addEventListener("scroll", function () {
     deleteLazyClass();
     window.removeEventListener('scroll', deleteLazyClass);

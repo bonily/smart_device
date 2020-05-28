@@ -3,6 +3,10 @@
 
   width: 100%;
   min-height: 500px;
+
+  a {
+    color: #ffffff;
+  }
 }
 
 .company-goods__wrapper {
@@ -41,6 +45,7 @@
   max-width: 370px;
   min-height: 625px;
 
+  padding-bottom: 10px;
 
   font-family: $title-font;
   font-size: 20px;
@@ -65,7 +70,7 @@
     position: absolute;
 
     right: 0;
-    bottom: 0;
+    bottom: 1px;
 
     width: 63px;
     height: 63px;
@@ -75,14 +80,17 @@
 
   &--make {
     background: url("../img/bg-make.jpg") no-repeat;
+    background-size: cover;
   }
 
   &--edit {
     background: url("../img/bg-edit.jpg") no-repeat;
+    background-size: cover;
   }
 
   &--details {
     background: url("../img/bg-details.jpg") no-repeat;
+    background-size: cover;
   }
 
   &:hover {

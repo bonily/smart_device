@@ -24,7 +24,7 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 136px;
-  margin-left: 715px;
+  margin-left: calc(50% - 245px);
 
   width: 490px;
   height: 605px;
@@ -81,6 +81,14 @@
   &::placeholder {
     color: $color-title;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .popap__form input {
@@ -93,7 +101,7 @@
   padding-top: 13px;
 }
 
-.popap__agree-block {
+div.popap__agree-block {
   max-width: 100%;
 
   padding-left: 49px;

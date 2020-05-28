@@ -7,8 +7,9 @@
   margin-top: -25px;
   margin-right: auto;
   padding-left: 210px;
+  padding-bottom: 20px;
 
-  background: url("../img/2005.png") no-repeat left 5px;
+  background: url("../img/2005.jpg") no-repeat left 5px;
 
   &::before {
     content: "";
@@ -50,7 +51,7 @@
 .about-company__button {
   display: block;
   width: 180px;
-  height: 45px;
+  min-height: 45px;
 
   padding-top: 14px;
   margin-top: 39px;

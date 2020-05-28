@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <title>SMART DEVICE.Умные технологии</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Сайт компании Smart-device"> 
   <link rel="preload" href="fonts/ptmonoregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensedregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.mine.css" rel="stylesheet">
-  <script src="js/picturefill.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="js/picturefill.min.js"></script><![endif]-->
 </head>
 
 <body>
@@ -19,15 +20,17 @@
   <header class="page-header">
     <div class="page-header__wpapper">
       <div class="page-header__topline">
-        <a class="page-header__logo">
+        <a class="page-header__logo" aria-label="Введите свое имя">
           <picture>
             <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
             <img src="img/logo-desktop.svg" width="202" height="52" alt="Логотип «SMART DEVICE»">
           </picture>
         </a>
           <ul class="page-header__contacts header-contacts">
-            <li class="header-contacts__email"><a href="mailto:info@sd.ru"><img class="header-contacts__logo" src="img/email.svg" alt="Написать письмо" width="19" height="14"><span class="header-contacts__text">info@sd.ru</span></a></li>
-            <li class="header-contacts__phone"><a href="tel:+74950005252"><img class="header-contacts__logo" src="img/phone.svg" alt="Позвонить" width="18" height="18"><span class="header-contacts__text">+7 (495) 000 52 52</span></a></li>
+            <li class="header-contacts__email"><a href="mailto:info@sd.ru">
+              <span class="header-contacts__text">info@sd.ru</span></a></li>
+            <li class="header-contacts__phone"><a href="tel:+74950005252">
+              <span class="header-contacts__text">+7 (495) 000 52 52</span></a></li>
           </ul>
           <a href="#" class="page-header__button call-button">Заказать звонок</a>
         </div>
@@ -47,7 +50,7 @@
               <source type="image/webp" media="(max-width: 768px)" srcset="img/boards-mobile.webp">
               <source type="image/webp" srcset="img/boards.webp">
               <source media="(max-width: 768px)" srcset="img/boards-mobile.png">
-              <img src="img/boards.png" width="705" height="515" alt="Изображение печатных плат">
+              <img src="img/boards.png" width="705" height="515" loading="lazy" alt="Изображение печатных плат">
             </picture>
             </div>
           </div>
@@ -93,7 +96,7 @@
           </li>
         </ul>
       </section>
-      <section class="about-company">
+      <section class="about-company lazy-bg">
         <h2>О компании</h2>
         <p>
           Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
@@ -105,13 +108,13 @@
         <div class="company-goods__wrapper wrapper">
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="company-goods__list">
-          <li class="company-goods__item company-goods__item--make"><a href="#">Производство печатных&nbsp;плат</a></li>
-          <li class="company-goods__item company-goods__item--edit"><a href="#">Монтаж&nbsp;печатных плат</a></li>
-          <li class="company-goods__item company-goods__item--details"><a href="#">Комплектующие для&nbsp;светотехники</a></li>
+          <li class="company-goods__item company-goods__item--make lazy-bg"><a href="#">Производство печатных&nbsp;плат</a></li>
+          <li class="company-goods__item company-goods__item--edit lazy-bg"><a href="#">Монтаж&nbsp;печатных плат</a></li>
+          <li class="company-goods__item company-goods__item--details lazy-bg"><a href="#">Комплектующие для&nbsp;светотехники</a></li>
         </ul>
         </div>
       </section>
-      <section class="main-form" id="main-form">
+      <section class="main-form lazy-bg" id="main-form">
         <div class="wrapper">
           <form class="form" method="GET">
             <h2>Остались вопросы? Задайте их нам!</h2>
@@ -119,9 +122,9 @@
               Мы проконсультируем Вас бесплатнo
             </p>
             <div class="form__wrapper">
-              <input type="text" name="name" id="name" placeholder="Имя">
-              <input type="tel" name="phone" id="phone" placeholder="Teлефон" minlength="16">
-              <textarea id="form-comment" placeholder="Ваш вопрос"></textarea>
+              <input type="text" name="name" id="name" placeholder="Имя" aria-label="Введите свое имя">
+              <input type="tel" name="phone" id="phone" placeholder="Teлефон" minlength="16" aria-label="Введите свой телефон">
+              <textarea id="form-comment" placeholder="Ваш вопрос" aria-label="Введите свое имя"></textarea>
               <button class="form__button" type="submit">
               задать вопрос
               </button>
@@ -137,7 +140,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__topline">
-        <a>
+        <a aria-label="Логотип компании">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="216" height="52" alt="Логотип «SMART DEVICE»">
         </a>
         <ul class="social-list">
@@ -150,7 +153,7 @@
           </li>
           <li>
             <a href="#" aria-label="Мы в Инстаграмме">
-              <svg width="26.33" height="26" viewBox="0 0 16.1 16" fill="#CDCDCD">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="#CDCDCD">
                 <use xlink:href="#icon-ok"></use>
               </svg></a>
           </li>
@@ -167,13 +170,13 @@
             <h3>Разделы сайта</h3>
             <button type ="button" aria-label="Открыть блок"></button>
             <ul>
-              <li><a>О компании</a></li>
-              <li><a>Продукты </a></li>
-              <li><a>Производство печатных плат</a></li>
-              <li><a>Монтаж печатных плат</a></li>
-              <li><a>Комплектующие</a></li>
-              <li><a>Доставка</a></li>
-              <li><a>Контакты</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Продукты </a></li>
+              <li><a href="#">Производство печатных плат</a></li>
+              <li><a href="#">Монтаж печатных плат</a></li>
+              <li><a href="#">Комплектующие</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </div>
           <div class="page-footer__adress page-footer__smart-block">
@@ -188,37 +191,31 @@
          </div>
         </div>
          <div class="page-footer__bottom-line">
-           <div class="page-footer__rigths">
-            <p class="page-footer__care">Все права защищены</p>
-            <p class="page-footer__sd">1999-2018 SD Service Devices</p>
-            <p class="page-footer__secret-rules"><a>Условия конфиденциальности</a></p>
-            <p class="page-footer__developed">Developed by wow studio</p>
+            <div class="page-footer__rigths">
+              <p class="page-footer__care">Все права защищены</p>
+              <p class="page-footer__sd">1999-2018 SD Service Devices</p>
+              <p class="page-footer__secret-rules"><a href="#">Условия конфиденциальности</a></p>
+              <p class="page-footer__developed"><a href="#">Developed by wow studio</a></p>
            </div>
          </div>
   </footer>
-
-    <!-- Модальное окно для заказа звонка -->
-      <div class="popap popap__template">
-          <form class="popap__form" method="post">
-            <h2>Закажите звонок</h2>
-            <p>
-              Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно&nbsp;в удобное время
-            </p>
-              <input type="text" name="popap-name" id="popap-name" placeholder="Имя">
-              <input type="tel" name="popap-phone" id="popap-phone" placeholder="Teлефон" minlength="16">
-              <textarea id="popap-comment" placeholder="Ваш вопрос"></textarea>
-              <button class="form__button" type="submit">
-              отправить
-              </button>
-              <div class="form__agree-block popap__agree-block">
-                <input class="visually-hidden" type="checkbox" name="popap-personal" id="popap-personal" checked>
-                <label for="personal">Я согласен на обработку персональных данных</label>
-              </div>
-              <button class="popap__close-button" type ="button" aria-label="Закрыть попап"></button>
-          </form>
+  <!-- Модальное окно для заказа звонка -->
+  <div class="popap popap__template">
+    <form class="popap__form" method="post">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно&nbsp;в удобное время</p>
+      <input type="text" name="popap-name" id="popap-name" placeholder="Имя">
+      <input type="tel" name="popap-phone" id="popap-phone" placeholder="Teлефон" minlength="16">
+      <textarea id="popap-comment" placeholder="Ваш вопрос"></textarea>
+      <button class="form__button" type="submit">отправить</button>
+        <div class="form__agree-block popap__agree-block">
+          <input class="visually-hidden" type="checkbox" name="popap-personal" id="popap-personal" checked>
+          <label for="personal">Я согласен на обработку персональных данных</label>
         </div>
-  <script src="js/vendor.js"></script>
+      <button class="popap__close-button" type ="button" aria-label="Закрыть попап"></button>
+    </form>
+  </div>
+  <script src="js/vendor.js" loading="lazy"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

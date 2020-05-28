@@ -14,28 +14,65 @@
   const popapMessageTemplate = document.querySelector('.popap__template');
   const scrollAdvantagesButton = document.querySelector('.main-block__scroll');
   let popapMessage;
+  const allTextContents = [];
+  const lazyImages = document.querySelectorAll('.lazy-bg');
 
+  // window.addEventListener('scroll', function () {
 
-  if (window.matchMedia(mobileWidth).matches) {
-    consultationButton.textContent = 'бесплатная консультация';
-  }
+  // });
 
-  if (window.matchMedia(tabletWidth).matches) {
-    for (let i = 0; i < sliceBlocks.length; i++) {
-      let block = sliceBlocks[i];
-      if (block.textContent.length > 211) {
-        block.textContent = block.textContent.slice(0, 211) + '..';
-      }
+  window.addEventListener("scroll", function () {
+    deleteLazyClass();
+    window.removeEventListener('scroll', deleteLazyClass);
+  });
+
+  function deleteLazyClass() {
+    for (let i = 0; i < lazyImages.length; i++) {
+      lazyImages[i].classList.remove('lazy-bg');
     }
   }
+
+  window.addEventListener(`resize`, function () {
+    consultationButton.textContent = 'получить бесплатную консультацию';
+    if (window.matchMedia(mobileWidth).matches) {
+      consultationButton.textContent = 'бесплатная консультация';
+    }
+
+
+    for (let i = 0; i < sliceBlocks.length; i++) {
+      const block = sliceBlocks[i];
+      allTextContents.push(block.textContent);
+      if (window.matchMedia(tabletWidth).matches) {
+        if (block.textContent.length > 211) {
+          const sliceTextContent = block.textContent.slice(0, 211) + '..';
+          block.textContent = sliceTextContent;
+        }
+      } else {
+        block.textContent = allTextContents[i];
+      }
+    }
+  });
+
 
   for (let i = 0; i < hiddenBlocks.length; i++) {
     hiddenBlocks[i].classList.add('page-footer__smart-block--hidden');
   }
 
+  let activeSmartBlock;
+
   for (let i = 0; i < openButtons.length; i++) {
+
     let button = openButtons[i];
+    let block = button.parentElement;
+
     button.addEventListener('click', function () {
+      if (activeSmartBlock) {
+        activeSmartBlock.classList.add('page-footer__smart-block--hidden')
+      }
+
+      if (block.classList.contains('page-footer__smart-block--hidden')) {
+        activeSmartBlock = block;
+      }
       button.parentElement.classList.toggle('page-footer__smart-block--hidden');
     });
   }

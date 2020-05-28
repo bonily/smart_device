@@ -106,7 +106,7 @@ gulp.task('start', gulp.series('build', 'server'));
 gulp.task('images', function () {
   return gulp.src('source/img/**/*.{png,jpg,svg}')
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 4}),
+      imagemin.optipng({optimizationLevel: 10}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))

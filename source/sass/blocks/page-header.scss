@@ -3,7 +3,10 @@
   z-index: 5;
 
   a {
+    display: block;
+
     color: $color-title;
+
     &:hover {
       opacity: 0.5;
     }
@@ -51,7 +54,7 @@
     padding-right: 23px;
   }
 
-  .page-header__button {
+  a.page-header__button {
     display: none;
   }
 }

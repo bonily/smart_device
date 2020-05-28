@@ -64,6 +64,14 @@
   &::placeholder {
     color: $color-title;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .form__wrapper textarea {
@@ -80,7 +88,7 @@
   cursor: pointer;
 
   width: 270px;
-  height: 45px;
+  min-height: 45px;
 
   padding-top: 7px;
   margin-left: 3px;

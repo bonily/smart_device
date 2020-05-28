@@ -8,8 +8,9 @@
 
   margin-top: -89px;
 
-  background: url("../img/main-block-background.jpg") no-repeat rgba(27, 45, 55, 1) center;
+  background: url("../img/main-block-background.jpg") no-repeat center;
   background-size: 1920px auto;
+  background-color: rgba(27, 45, 55, 1);
 
   &::before {
     content: "";
@@ -107,7 +108,6 @@
 
   margin-top: 44px;
   margin-left: 97px;
-
 }
 
 .main-block__scroll {
@@ -126,7 +126,7 @@
 
   opacity: 0.5;
   transform: rotate(-90deg);
-  
+
   &:hover {
     opacity: 1;
   }

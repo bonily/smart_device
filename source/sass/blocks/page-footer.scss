@@ -189,8 +189,13 @@
 
 
 .page-footer__developed {
-
   margin-right: 0;
+
+  a {
+    font-family: $main-font;
+    font-size: 13px;
+    line-height: 25px;
+  }
 }
 
 .page-footer__smart-block button {

@@ -6,9 +6,9 @@
 
   min-height: 878px;
 
-  margin-top: -90px;
+  margin-top: -89px;
 
-  background: url("../img/main-block-background.jpg") rgba(27, 45, 55, 1) center;
+  background: url("../img/main-block-background.jpg") no-repeat rgba(27, 45, 55, 1) center;
   background-size: 1920px auto;
 
   &::before {
@@ -93,19 +93,28 @@
   }
 }
 
+.main-block__button-line {
+  display: block;
+  position: relative;
+
+  padding-bottom: 147px;
+  margin-bottom: 70px;
+}
+
 .main-block__button {
   position: relative;
   z-index: 5;
 
   margin-top: 44px;
   margin-left: 97px;
+
 }
 
 .main-block__scroll {
   display: block;
   position: absolute;
-  left: 57px;
-  top: 734px;
+  left: -37px;
+  bottom: -2px;
 
   width: 93px;
   height: 16px;
@@ -187,6 +196,10 @@
   .main-block__scroll {
     display: none;
   }
+
+  .main-block__button-line {
+    margin-bottom: 13px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -228,6 +241,10 @@
 
     font-size: 16px;
     line-height: 25px;
+  }
+
+  .main-block__button-line {
+    padding-bottom: 58px;
   }
 
   .main-block__button {

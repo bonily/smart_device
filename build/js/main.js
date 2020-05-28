@@ -77,21 +77,21 @@
 
 
   function createPhoneMask(element) {
+    element.addEventListener('focus', function () {
+      element.value = '+7(';
+    });
+
+    element.addEventListener('blur', function () {
+      if (phonePlace.value.length < 16) {
+        element.value = '';
+      }
+    });
+
     return new window.IMask(
         element, {
           mask: '+{7}(000)000-00-00'
         });
   }
-
-  phonePlace.addEventListener('focus', function () {
-    phonePlace.value = '+7(';
-  });
-
-  phonePlace.addEventListener('blur', function () {
-    if (phonePlace.value.length < 16) {
-      phonePlace.value = '';
-    }
-  });
 
   callButton.addEventListener('click', function () {
     popapMessage = popapMessageTemplate.cloneNode(true);

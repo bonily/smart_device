@@ -559,6 +559,7 @@ a {
   margin-top: 14px;
   margin-bottom: 15px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 24px;
   line-height: 34px;
   color: #00b2ff; }
@@ -1509,7 +1510,7 @@ li.company-goods__item + li {
   padding-bottom: 116px;
   margin-top: 50px; }
 
-.form__wrapper input + input {
+.form__wrapper input:nth-child(even) {
   margin-left: 30px; }
 
 .form__wrapper input,
@@ -1577,9 +1578,11 @@ li.company-goods__item + li {
     padding-bottom: 104px;
     margin-top: 54px; }
   .form__wrapper input {
-    max-width: 100%;
+    width: 100%;
     padding-left: 19px;
     padding-bottom: 5px; }
+    .form__wrapper input:nth-child(even) {
+      margin-left: 0; }
   .form__wrapper textarea {
     min-height: 160px;
     margin-bottom: 46px; }

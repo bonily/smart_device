@@ -1,0 +1,28 @@
+.form-button {
+  cursor: pointer;
+
+  width: 270px;
+  min-height: 45px;
+
+  padding-top: 7px;
+  margin-left: 3px;
+
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-title;
+
+  border: 1px solid $color-border;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

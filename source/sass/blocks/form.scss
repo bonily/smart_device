@@ -84,84 +84,10 @@
   margin-bottom: 43px;
 }
 
-.form__button {
-  cursor: pointer;
-
-  width: 270px;
-  min-height: 45px;
-
-  padding-top: 7px;
-  margin-left: 3px;
-
-  font-family: $title-font;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $color-title;
-
-  border: 1px solid $color-border;
-  box-sizing: border-box;
-  border-radius: 5px;
-
-  background-color: transparent;
-
-  &:hover {
-    opacity: 0.5;
-  }
-}
-
 .form__agree-block {
-  position: relative;
-  display: block;
-
   max-width: 35%;
-
-  padding: 0;
-  padding-top: 10px;
-  margin: 0;
-  margin-right: 30px;
-
-  line-height: 16px;
-
-  color: $color-title;
-
-  opacity: 0.8;
 }
 
-
-.form__agree-block input[type="checkbox"] + label {
-  cursor: pointer;
-
-  &::before {
-    position: absolute;
-    top: 10px;
-    left: -34px;
-
-    display: block;
-
-    width: 16px;
-    height: 16px;
-
-    content: " ";
-
-    border: 1px solid $color-border;
-    background-color: transparent;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-}
-
-.form__agree-block input[type="checkbox"]:checked + label {
-  &::before {
-    background: url("../img/icon-tick.svg") no-repeat;
-    background-position: center;
-  }
-}
 
 @media (max-width: $tablet-width) {
   .form {

@@ -1,0 +1,47 @@
+.agree-block {
+  position: relative;
+  display: block;
+
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  margin-right: 30px;
+
+  line-height: 16px;
+
+  color: $color-title;
+
+  opacity: 0.8;
+
+
+  input[type="checkbox"] + label {
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: -30px;
+
+      display: block;
+
+      width: 16px;
+      height: 16px;
+
+      content: " ";
+
+      border: 1px solid $color-border;
+      background-color: transparent;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    &::before {
+      background: url("../img/icon-tick.svg") no-repeat;
+      background-position: center;
+    }
+  }
+}

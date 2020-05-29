@@ -1,4 +1,5 @@
 @import "fonts-style.scss", "variables.scss", "normalize.scss", "global.scss";
+@import "blocks/agree-block.scss";
 @import "blocks/call-button.scss";
 @import "blocks/header-contacts.scss";
 @import "blocks/consultation-button.scss";
@@ -16,3 +17,5 @@
 @import "blocks/visually-hidden.scss";
 @import "blocks/popap.scss";
 @import "blocks/lazy-bg.scss";
+@import "blocks/form-button.scss";
+

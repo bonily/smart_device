@@ -21,7 +21,7 @@
       <div class="page-header__topline">
         <a class="page-header__logo" aria-label="Введите свое имя">
           <picture>
-            <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
             <img src="img/logo-desktop.svg" width="202" height="52" alt="Логотип «SMART DEVICE»">
           </picture>
         </a>
@@ -49,7 +49,8 @@
             <source type="image/webp" media="(max-width: 768px)" srcset="img/boards-mobile.webp">
             <source type="image/webp" srcset="img/boards.webp">
             <source media="(max-width: 768px)" srcset="img/boards-mobile.png">
-            <img src="img/boards.png" width="705" height="515" loading="lazy" alt="Изображение печатных плат">
+            <!-- 1х: 705px; 2x: 1410px -->
+            <img src="img/boards.png" srcset="img/boards.png 2x" width="705" height="515" loading="lazy" alt="Изображение печатных плат">
           </picture>
         </div>
       </div>

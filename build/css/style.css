@@ -405,14 +405,18 @@ a {
     cursor: pointer; }
 
 .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 431px;
   padding: 0;
   padding-top: 13px;
   font-size: 16px;
   vertical-align: top;
   list-style: none; }
-
-.header-contacts li + li {
-  margin-left: 87px; }
 
 .header-contacts__logo {
   margin-right: 16px; }
@@ -420,7 +424,8 @@ a {
 .header-contacts__email a {
   position: relative;
   padding-top: 4px;
-  padding-left: 38px; }
+  padding-left: 38px;
+  margin-left: auto; }
   .header-contacts__email a::before {
     content: "";
     position: absolute;
@@ -431,7 +436,9 @@ a {
     background: url("../img/email.svg") no-repeat; }
 
 .header-contacts__phone a {
+  display: block;
   position: relative;
+  min-width: 212px;
   padding-top: 4px;
   padding-left: 38px; }
   .header-contacts__phone a::before {
@@ -445,6 +452,7 @@ a {
 
 @media (max-width: 1023px) {
   .header-contacts {
+    min-width: 80px;
     padding-top: 11px; }
   .header-contacts__logo {
     margin-right: 0; }
@@ -456,7 +464,8 @@ a {
       height: 18.67px;
       background-size: cover; }
   .header-contacts__phone a {
-    padding: 13px; }
+    padding: 13px;
+    min-width: 26px; }
     .header-contacts__phone a::before {
       top: 0;
       width: 24px;
@@ -473,7 +482,9 @@ a {
   .header-contacts li + li {
     margin-left: 24px; }
   .header-contacts__phone {
-    padding-top: 1px; } }
+    padding-top: 1px; }
+  .header-contacts__email a::before {
+    left: 6px; } }
 
 .consultation-button {
   display: block;
@@ -621,20 +632,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1420px;
+  max-width: 1453px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 33px;
-  padding-left: 3px;
-  padding-right: 6px; }
+  padding-left: 20px;
+  padding-right: 22px; }
 
 .page-header__logo {
-  margin-right: auto; }
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .page-header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0; }
 
 .page-header__button {
@@ -643,6 +653,9 @@ a {
 
 @media (max-width: 1023px) {
   .page-header__topline {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 20px;
     padding-left: 25px;
     padding-right: 23px; }
@@ -1195,7 +1208,7 @@ a {
   .page-footer ul {
     margin-top: 10px; }
   .page-footer__container {
-    margin-top: 60px;
+    margin-top: 56px;
     margin-bottom: 36px;
     padding-left: 2px;
     padding-right: 26px; }
@@ -1224,22 +1237,23 @@ a {
   .page-footer__topline {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-left: 14px;
     padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
   .page-footer__topline a {
-    min-width: 51%;
+    min-width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 68px; }
   .page-footer__topline ul {
-    min-width: 51%;
-    padding-left: 15px;
-    padding-right: 12px;
-    margin-left: auto;
-    margin-right: auto; }
+    max-width: 160px;
+    margin: 5px auto 16px; }
   .page-footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1328,6 +1342,8 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding-left: 11px;
     padding-right: 11px; } }
 
@@ -1528,7 +1544,7 @@ li.company-goods__item + li {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: none; }
+  border-radius: 0; }
   .form__wrapper input::-webkit-input-placeholder,
   .form__wrapper textarea::-webkit-input-placeholder {
     color: #ffffff; }
@@ -1713,7 +1729,8 @@ li.company-goods__item + li {
   line-height: 22px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  border: none; }
+  border: none;
+  border-radius: 0; }
   .popap__form input::-webkit-input-placeholder,
   .popap__form textarea::-webkit-input-placeholder {
     color: #ffffff; }
@@ -1734,7 +1751,7 @@ li.company-goods__item + li {
     opacity: 0.5; }
   .popap__form input:focus,
   .popap__form textarea:focus {
-    opacity: 0.5; }
+    opacity: 1; }
 
 .popap__form input {
   height: 51.83px; }

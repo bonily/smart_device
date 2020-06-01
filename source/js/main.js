@@ -160,5 +160,7 @@
     targetElement.scrollIntoView({behavior: "smooth"});
   }
 
-  createPhoneMask(phonePlace);
+  phonePlace.addEventListener('focus', function () {
+    createPhoneMask(phonePlace);
+  });
 })();

@@ -1778,7 +1778,8 @@ button.popap__close-button {
   width: 16px;
   height: 16px;
   background: url("../img/close.svg") no-repeat;
-  border: none; }
+  border: none;
+  outline: none; }
   button.popap__close-button:hover {
     cursor: pointer;
     opacity: 0.5; }
@@ -1804,6 +1805,7 @@ button.popap__close-button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  outline: none;
   background-color: transparent; }
   .form-button:hover {
     opacity: 0.5; }

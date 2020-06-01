@@ -1527,7 +1527,8 @@ li.company-goods__item + li {
   line-height: 22px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  border: none; }
+  border: none;
+  border-radius: none; }
   .form__wrapper input::-webkit-input-placeholder,
   .form__wrapper textarea::-webkit-input-placeholder {
     color: #ffffff; }
@@ -1548,7 +1549,7 @@ li.company-goods__item + li {
     opacity: 0.5; }
   .form__wrapper input:focus,
   .form__wrapper textarea:focus {
-    opacity: 0.5; }
+    opacity: 1; }
 
 .form__wrapper textarea {
   -webkit-box-flex: 2;

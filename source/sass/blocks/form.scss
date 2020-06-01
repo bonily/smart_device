@@ -112,13 +112,13 @@
   }
 
   .form__wrapper input {
-    width: 100%;
+    max-width: 50%;
 
     padding-left: 19px;
     padding-bottom: 5px;
 
     &:nth-child(even) {
-      margin-left: 0;
+      margin-left: 32px;
     }
   }
 
@@ -127,10 +127,11 @@
     margin-bottom: 46px;
   }
 
-  .form__button {
+  button.form__button {
     width: 280px;
 
-    padding-top: 4px;
+    min-height: 47px;
+    padding-top: 3px;
     margin-left: 0;
   }
 
@@ -140,7 +141,8 @@
 
   input.form__input-check[type="checkbox"] + label {
     &::before {
-      left: -34px;
+      top: 10px;
+      left: -36px;
     }
   }
 }
@@ -172,11 +174,16 @@
 
   .form__wrapper input {
     width: 100%;
+    max-width: 100%;
 
     padding-top: 0;
     padding-bottom: 3px;
     padding-left: 15px;
     margin-bottom: 33px;
+
+    &:nth-child(even) {
+      margin-left: 0;
+    }
   }
 
   .form__wrapper input + input {

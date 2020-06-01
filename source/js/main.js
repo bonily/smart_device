@@ -73,13 +73,12 @@
 
 
   function createPhoneMask(element) {
-    element.addEventListener('focus', function () {
-      element.value = '+7(';
-    });
+    element.placeholder = '+7(';
 
     element.addEventListener('blur', function () {
-      if (phonePlace.value.length < 16) {
+      if (element.value.length < 16) {
         element.value = '';
+        element.placeholder = 'Телефон';
       }
     });
 
@@ -93,25 +92,28 @@
     popapMessage = popapMessageTemplate.cloneNode(true);
     popapMessage.classList.remove('popap__template');
 
-    const closePopapButton = popapMessage.querySelector('.popap__close-button');
-    const form = popapMessage.querySelector('.popap__form');
-    const popapNamePlace = popapMessage.querySelector('#popap-name');
-    const popapPhonePlace = popapMessage.querySelector('#popap-phone');
-    const popapTextMessage = popapMessage.querySelector('#popap-comment');
+    let closePopapButton = popapMessage.querySelector('.popap__close-button');
+    let form = popapMessage.querySelector('.popap__form');
+    let popapNamePlace = popapMessage.querySelector('#popap-name');
+    let popapPhonePlace = popapMessage.querySelector('#popap-phone');
+    let popapTextMessage = popapMessage.querySelector('#popap-comment');
 
-    createPhoneMask(popapPhonePlace);
     popapNamePlace.focus();
     popapNamePlace.value = window.localStorage.getItem('name') || '';
-    popapPhonePlace.value = window.localStorage.getItem('number') || '';
+    popapPhonePlace.value = window.localStorage.getItem('number')|| '';
     popapTextMessage.value = window.localStorage.getItem('message') || '';
     popapPlace.appendChild(popapMessage);
+    popapPhonePlace.addEventListener('focus', function () {
+      createPhoneMask(popapPhonePlace);
+    });
 
-    form.addEventListener('submit', function (evt) {
-      evt.preventDefault();
+
+    form.addEventListener('submit', function () {
       window.localStorage.setItem('name', popapNamePlace.value);
       window.localStorage.setItem('number', popapPhonePlace.value);
       window.localStorage.setItem('message', popapTextMessage.value);
       popapPlace.removeChild(popapMessage);
+
       document.removeEventListener('keydown', onPopapKeydown);
       document.removeEventListener('click', onOverlayClick);
     });

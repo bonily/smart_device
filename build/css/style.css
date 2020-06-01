@@ -372,7 +372,7 @@ a {
     .agree-block input[type="checkbox"] + label::before {
       position: absolute;
       top: 10px;
-      left: -30px;
+      left: -33px;
       display: block;
       width: 16px;
       height: 16px;
@@ -1578,22 +1578,24 @@ li.company-goods__item + li {
     padding-bottom: 104px;
     margin-top: 54px; }
   .form__wrapper input {
-    width: 100%;
+    max-width: 50%;
     padding-left: 19px;
     padding-bottom: 5px; }
     .form__wrapper input:nth-child(even) {
-      margin-left: 0; }
+      margin-left: 32px; }
   .form__wrapper textarea {
     min-height: 160px;
     margin-bottom: 46px; }
-  .form__button {
+  button.form__button {
     width: 280px;
-    padding-top: 4px;
+    min-height: 47px;
+    padding-top: 3px;
     margin-left: 0; }
   .form__wrapper p {
     margin-left: 73px; }
   input.form__input-check[type="checkbox"] + label::before {
-    left: -34px; } }
+    top: 10px;
+    left: -36px; } }
 
 @media (max-width: 767px) {
   .form {
@@ -1612,10 +1614,13 @@ li.company-goods__item + li {
     margin-top: 26px; }
   .form__wrapper input {
     width: 100%;
+    max-width: 100%;
     padding-top: 0;
     padding-bottom: 3px;
     padding-left: 15px;
     margin-bottom: 33px; }
+    .form__wrapper input:nth-child(even) {
+      margin-left: 0; }
   .form__wrapper input + input {
     margin-left: 0; }
   .form__wrapper textarea {

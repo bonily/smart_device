@@ -408,15 +408,25 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 5;
   min-width: 431px;
   padding: 0;
   padding-top: 13px;
   font-size: 16px;
   vertical-align: top;
   list-style: none; }
+
+.header-contacts li {
+  margin-left: 20px;
+  margin-bottom: 10px; }
+
+.header-contacts li + li {
+  margin-left: 86px; }
 
 .header-contacts__logo {
   margin-right: 16px; }
@@ -648,6 +658,7 @@ a {
   margin: 0; }
 
 .page-header__button {
+  min-width: 180px;
   margin-top: 3px;
   margin-left: 49px; }
 

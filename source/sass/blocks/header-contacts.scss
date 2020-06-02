@@ -1,6 +1,8 @@
 .header-contacts {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  flex-wrap: wrap;
+  z-index: 5;
 
   min-width: 431px;
 
@@ -13,6 +15,14 @@
   list-style: none;
 }
 
+.header-contacts li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.header-contacts li + li {
+  margin-left: 86px;
+}
 
 .header-contacts__logo {
   margin-right: 16px;

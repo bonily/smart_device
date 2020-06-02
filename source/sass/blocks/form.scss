@@ -1,11 +1,12 @@
 .form {
   position: relative;
   z-index: 5;
-  max-width: 570px;
 
+  width: 635px;
 
+  padding-right: 65px;
   margin-left: auto;
-  margin-right: calc(20% - 5px);
+  margin-right: 0;
 }
 
 .form h2 {
@@ -94,9 +95,11 @@
 
 @media (max-width: $tablet-width) {
   .form {
-    max-width: 100%;
+    width: 100%;
+
     margin-left: 90px;
     margin-right: 85px;
+    padding-right: 0;
   }
 
   .form h2 {
@@ -195,10 +198,10 @@
     min-height: 100px;
 
     padding-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
-  .form__button {
+  button.form__button {
     width: 290px;
     padding-top: 1px;
     margin-left: -2px;

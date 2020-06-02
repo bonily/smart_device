@@ -891,7 +891,7 @@ a {
   margin-top: -25px;
   margin-right: auto;
   padding-left: 210px;
-  padding-bottom: 20px;
+  padding-bottom: 110px;
   background: url("../img/2005.jpg") no-repeat left 5px; }
   .about-company::before {
     content: "";
@@ -947,6 +947,7 @@ a {
   .about-company {
     min-height: 441px;
     margin-top: -210px;
+    padding-bottom: 82px;
     background-size: 251px 362px;
     background-position: -9px 4px; }
   .about-company h2 {
@@ -971,6 +972,7 @@ a {
   .about-company {
     min-height: 566px;
     padding-left: 14px;
+    padding-bottom: 66px;
     background: transparent; }
   .about-company h2 {
     margin-bottom: 21px;
@@ -989,7 +991,7 @@ a {
 .main-form {
   position: relative;
   background: url("../img/airoplan.png") no-repeat #00b2ff;
-  background-position: calc(70% - 636px) 160px; }
+  background-position: calc(54% - 411px) 160px; }
   .main-form::before {
     content: "";
     position: absolute;
@@ -1007,6 +1009,17 @@ a {
     height: 100%;
     background: url("../img/form-polygon-big.svg") no-repeat;
     background-position: 100% -60px; }
+
+.main-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px; }
 
 @media (max-width: 1023px) {
   .main-form {
@@ -1355,12 +1368,13 @@ a {
     color: #ffffff; }
 
 .company-goods__wrapper {
-  max-width: 1170px; }
+  max-width: 1600px; }
 
 .company-goods h2 {
   display: block;
   margin: 0;
   margin-bottom: 47px;
+  margin-left: calc(13% + 5px);
   padding-top: 88px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 36px;
@@ -1372,9 +1386,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
   list-style: none; }
 
 .company-goods__item {
@@ -1382,9 +1403,10 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 370px;
+  max-width: 23%;
   min-height: 625px;
   padding-bottom: 10px;
+  margin-bottom: 30px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px; }
@@ -1418,7 +1440,7 @@ a {
     opacity: 0.5; }
 
 li.company-goods__item + li {
-  margin-left: 30px; }
+  margin-left: 2%; }
 
 .company-goods__item a {
   position: relative;
@@ -1445,6 +1467,7 @@ li.company-goods__item + li {
     min-height: 256px;
     margin-left: 26px;
     margin-right: 24px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 30px;
     background-size: 100%;
@@ -1458,7 +1481,8 @@ li.company-goods__item + li {
     padding-left: 26px;
     padding-top: 50px;
     padding-right: 120px;
-    margin-bottom: 49px; }
+    margin-bottom: 49px;
+    margin-left: 0; }
   .company-goods__item a {
     padding-top: 42px;
     padding-right: 76%; }
@@ -1491,9 +1515,10 @@ li.company-goods__item + li {
 .form {
   position: relative;
   z-index: 5;
-  max-width: 570px;
+  width: 635px;
+  padding-right: 65px;
   margin-left: auto;
-  margin-right: calc(20% - 5px); }
+  margin-right: 0; }
 
 .form h2 {
   display: block;
@@ -1582,9 +1607,10 @@ li.company-goods__item + li {
 
 @media (max-width: 1023px) {
   .form {
-    max-width: 100%;
+    width: 100%;
     margin-left: 90px;
-    margin-right: 85px; }
+    margin-right: 85px;
+    padding-right: 0; }
   .form h2 {
     padding-top: 80px;
     margin-bottom: 17px;
@@ -1643,8 +1669,8 @@ li.company-goods__item + li {
   .form__wrapper textarea {
     min-height: 100px;
     padding-top: 10px;
-    margin-bottom: 35px; }
-  .form__button {
+    margin-bottom: 33px; }
+  button.form__button {
     width: 290px;
     padding-top: 1px;
     margin-left: -2px;

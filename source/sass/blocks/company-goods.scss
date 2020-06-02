@@ -10,7 +10,7 @@
 }
 
 .company-goods__wrapper {
-  max-width: 1170px;
+  max-width: 1600px;
 }
 
 .company-goods h2 {
@@ -18,6 +18,7 @@
 
   margin: 0;
   margin-bottom: 47px;
+  margin-left: calc(13% + 5px);
   padding-top: 88px;
 
   font-family: $title-font;
@@ -29,11 +30,14 @@
 
 .company-goods__list {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
 
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
 
   list-style: none;
 }
@@ -42,10 +46,11 @@
   position: relative;
   flex-grow: 1;
 
-  max-width: 370px;
+  max-width: 23%;
   min-height: 625px;
 
   padding-bottom: 10px;
+  margin-bottom: 30px;
 
   font-family: $title-font;
   font-size: 20px;
@@ -99,7 +104,7 @@
 }
 
 li.company-goods__item + li {
-  margin-left: 30px;
+  margin-left: 2%;
 }
 
 .company-goods__item a {
@@ -133,6 +138,7 @@ li.company-goods__item + li {
 
     margin-left: 26px;
     margin-right: 24px;
+    margin-bottom: 0;
 
     font-size: 20px;
     line-height: 30px;
@@ -155,6 +161,7 @@ li.company-goods__item + li {
     padding-right: 120px;
 
     margin-bottom: 49px;
+    margin-left: 0;
   }
 
   .company-goods__item a {

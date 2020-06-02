@@ -37,8 +37,8 @@
       const block = sliceBlocks[i];
       allTextContents.push(block.textContent);
       if (window.matchMedia(tabletWidth).matches) {
-        if (block.textContent.length > 211) {
-          const sliceTextContent = block.textContent.slice(0, 211) + '..';
+        if (block.textContent.length > 209) {
+          const sliceTextContent = block.textContent.slice(0, 209) + '..';
           block.textContent = sliceTextContent;
         }
       } else {
